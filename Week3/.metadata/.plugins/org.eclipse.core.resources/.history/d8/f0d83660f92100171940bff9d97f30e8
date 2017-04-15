@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class SalesRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		String firstName = "";
+		String lastName = "";
+		
+		System.out.print("Enter the first name of the Salesperons: ");
+		firstName = keyboard.nextLine();
+		System.out.print("Enter the last name of the Salesperons: ");
+		lastName = keyboard.nextLine();
+		
+		SalesPerson salesPerson1 = new SalesPerson(firstName, lastName);
+		salesPerson1.print();
+	}
+
+}
